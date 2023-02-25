@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- intrnational tel input -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <header class="p-3 mb-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/landingpage/home.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <img style="width: 80px; height: auto;" src="/assets/images/logo-kp.png" alt="">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-3 link-secondary">Beranda</a></li>
+                    <li><a href="#" class="nav-link px-3 link-secondary">Cari Kamar</a></li>
+                    <li><a href="#" class="nav-link px-3 link-secondary">Daftar Sebagai Host</a></li>
+                    <li><a href="#" class="nav-link px-3 link-secondary">PANDU</a></li>
+                </ul>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small mt-sm-3 mt-lg-4">
+                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="/views/profile/index.html">Profil</a></li>
+                        <li><a class="dropdown-item" href="#">Pemesanan</a></li>
+                        <li><a class="dropdown-item" href="#">Pemesanan Pemandu</a></li>
+                        <li><a class="dropdown-item" href="#">Mitra Bisnis</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Daftar jadi Host</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/login/login.html">Bantuan (WA)</a></li>
+                        <li><a class="dropdown-item" href="/login/login.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row m-3 m-md-0">
+                <div class="card shadow-sm col-md-8 offset-md-2 mt-sm-2">
+                    <div class="card-body">
+                        <!-- profile header -->
+                        <div class="row profil m-md-3 my-3 align-items-center">
+                            <div class="col-5 col-md-2">
+                                <img style="width: 120px; height: auto; border-radius: 50%;" src="/assets/images/profile-pict.jpg" alt="">
+                            </div>
+                            <div class="profile-sum col-7 mx-md-3">
+                                <h2>
+                                    Monalisa
+                                </h2>
+                                <p class="text-secondary mb-0">
+                                    Saldo Dompet
+                                </p>
+                                <h3 class="mb-0">
+                                    Rp.1.200.000
+                                </h3>
+                                <a href="/views/dompet/index.html">
+                                    Lihat riwayat transaksi <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end of profile header -->
+                        <!-- tab section -->
+                        <div class="tab my-5">
+                            <!-- tab list -->
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-profil-tab" data-bs-toggle="pill" data-bs-target="#pills-profil" type="button" role="tab" aria-controls="pills-profil" aria-selected="true">Profil</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-ubahPassword-tab" data-bs-toggle="pill" data-bs-target="#pills-ubahPassword" type="button" role="tab" aria-controls="pills-ubahPassword" aria-selected="false">Ubah Password</button>
+                                </li>
+                            </ul>
+                            <hr>
+                            <!-- end of tab list -->
+                            <!-- tab content -->
+                            <div class="tab-content" id="pills-tabContent">
+                                <!-- tab profil -->
+                                <div class="tab-pane fade show active" id="pills-profil" role="tabpanel" aria-labelledby="pills-profil-tab" tabindex="0">
+                                    <form class="my-4" action="submit">
+                                        <!-- heading -->
+                                        <div class="heading-profil my-3 pb-sm-2">
+                                            <h4>Detail Profil Kamu</h4>
+                                        </div>
+                                        <!-- end of heading -->
+                                        <!-- nama lengkap -->
+                                        <div class="row mb-3">
+                                            <label for="inputNamaLengkap" class="col-sm-3 col-form-label">Nama Lengkap<span class="penting">*</span></label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="inputNamaLengkap" placeholder="Masukkan nama lengkap kamu">
+                                            </div>
+                                        </div>
+                                        <!-- end of nama lengkap -->
+                                        <!-- nama panggilan -->
+                                        <div class="row mb-3">
+                                            <label for="inputNamaPanggilan" class="col-sm-3 col-form-label">Nama Panggilan</label>
+                                            <div class="col-sm-9 ">
+                                                <input type="text " class="form-control" id="inputNamaPanggilan" placeholder="Masukkan nama panggilan kamu">
+                                            </div>
+                                        </div>
+                                        <!-- end of nama panggilan -->
+                                        <!-- email -->
+                                        <div class="row mb-3 ">
+                                            <label for="inputEmail" class="col-sm-3 col-form-label">Email</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="email@Example.com" disabled>
+                                            </div>
+                                        </div>
+                                        <!-- end of email -->
+                                        <!-- phone number -->
+                                        <div class="row mb-3">
+                                            <label for="inputNoTelepon" class="col-sm-3 col-form-label">Nomor Telepon<span class="penting">*</span></label>
+                                            <div class="col-sm-9">
+                                                <input type="tel" class="iti form-control" id="inputNoTelepon" placeholder="851....">
+                                            </div>
+                                        </div>
+                                        <!-- end of phone number -->
+                                        <!-- whatsapp number -->
+                                        <div class="row mb-3">
+                                            <label for="inputWhatsapp" class="col-sm-3 col-form-label">Nomor Whatsapp<span class="penting">*</span></label>
+                                            <div class="col-sm-9">
+                                                <input type="tel" class="iti form-control" id="inputWhatsapp" placeholder="+62851....">
+                                            </div>
+                                        </div>
+                                        <!-- end of whatsapp number -->
+                                        <!-- Negara -->
+                                        <div class="row mb-3 ">
+                                            <label for="inputNegara" class="col-sm-3 col-form-label">Negara</label>
+                                            <div class="col-sm-9 ">
+                                                <input type="text " class="form-control" id="inputNegara" placeholder="Masukkan nama negara kamu saat ini">
+                                            </div>
+                                        </div>
+                                        <!-- end of Negara -->
+                                        <!-- Kota Domisili -->
+                                        <div class="row mb-3 ">
+                                            <label for="inputKota Domisili" class="col-sm-3 col-form-label">Kota Domisili</label>
+                                            <div class="col-sm-9 ">
+                                                <input type="text " class="form-control" id="inputKota Domisili" placeholder="Masukkan nama kota domisili kamu">
+                                            </div>
+                                        </div>
+                                        <!-- end of Kota Domisili -->
+                                        <!-- tanggal lahir -->
+                                        <div class="tgl-lahir row mb-3">
+                                            <label for="inputTglLahir" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                                            <div class="col-sm-9 ">
+                                                <input type="date" class="form-control" id="inputTglLahir">
+                                            </div>
+                                        </div>
+                                        <!-- end of tanggal lahir -->
+                                        <!-- jenis kelamin -->
+                                        <div class="tgl-lahir row mb-3">
+                                            <label for="inputTglLahir" class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                                            <div class="col-sm-9 ">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="jkLaki" value="Laki-Laki" checked>
+                                                    <label class="form-check-label" for="jkLaki">Laki-Laki</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="jkPerempuan" value="option2">
+                                                    <label class="form-check-label" for="jkPerempuan">Perempuan</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="jkLain" value="Lainnya">
+                                                    <label class="form-check-label" for="jkLain">Lainnya</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end of jenis kelamin -->
+
+                                        <div class="submit col-12 text-center">
+                                            <button type="submit" class="btn btn-submit">Simpan</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- end of tab profil -->
+                                <!-- tab ubah password -->
+                                <div class="tab-pane fade" id="pills-ubahPassword" role="tabpanel" aria-labelledby="pills-ubahPassword-tab" tabindex="0">
+                                    <!-- form reset password -->
+                                    <form class="my-4" action="sumbit">
+                                        <!-- heading -->
+                                        <div class="heading-profil my-3 pb-sm-2">
+                                            <h4>Ubah Password Kamu</h4>
+                                        </div>
+                                        <!-- end of heading -->
+                                        <!-- password lama -->
+                                        <div class="row mb-4 mb-md-5">
+                                            <label for="inputOldPassword" class="col-sm-3 col-form-label">Password Lama</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputOldPassword" placeholder="Masukkan password lama kamu">
+                                                <span class="span-form text-secondary">terdiri dari min 8 karakter, satu angka dan satu huruf besar</span>
+                                            </div>
+                                        </div>
+                                        <!-- end of password lama -->
+                                        <!-- password baru -->
+                                        <div class="row mb-3">
+                                            <label for="inputNewPassword" class="col-sm-3 col-form-label">Password Baru</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputNewPassword" placeholder="Masukkan password baru kamu">
+                                                <span class="span-form text-secondary">terdiri dari min 8 karakter, satu angka dan satu huruf besar</span>
+                                            </div>
+                                        </div>
+                                        <!-- end of password baru -->
+                                        <!-- confirm password baru -->
+                                        <div class="row mb-3">
+                                            <label for="inputConfirmPassword" class="col-sm-3 col-form-label">Confirm Password Baru</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Masukkan password baru kamu"><span class="span-form text-secondary">masukkan password yang sama dengan form sebelumnya</span>
+                                            </div>
+
+                                            <div class="submit col-12 text-center">
+                                                <button type="submit" class="btn btn-submit">Ubah Password</button>
+                                            </div>
+                                        </div>
+                                        <!-- end of confirm password baru -->
+                                    </form>
+                                    <!-- end of reset password -->
+                                </div>
+                                <!-- end of tab ubah password section -->
+                            </div>
+                            <!-- end of tab content -->
+                        </div>
+                        <!-- end of tab section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container mt-5">
+            <div class="card px-md-5 px-2">
+                <div class="card-body mx-md-5 px-md-5 mx-5">
+                    <div class="row mx-md-5 px-md-5">
+                        <div class="footer-item col-6 pt-3">
+                            <h5>Tentang Kami</h5>
+                            <ul class="list-item mt-3">
+                                <li>
+                                    <a href="">Visi Misi</a>
+                                </li>
+                                <li>
+                                    <a href="">Karir</a>
+                                </li>
+                                <li>
+                                    <a href="">Partner</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item col-6 pt-3">
+                            <h5>Informasi</h5>
+                            <ul class="list-item mt-3">
+                                <li>
+                                    <a href="">Covid-19</a>
+                                </li>
+                                <li>
+                                    <a href="">Syarat dan Ketentuan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<!-- bootstrap -->
+<script src="/assets/dist/js/bootstrap.bundle.min.js "></script>
+<!-- international phone  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script>
+    const phoneInputField = document.querySelector("#inputNoTelepon");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
+
+
+
+</html>

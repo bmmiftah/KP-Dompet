@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dompet Kamar Pelajar</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p-3 mb-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/landingpage/home.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <img style="width: 80px; height: auto;" src="/assets/images/logo-kp.png" alt="">
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-3 link-secondary">Beranda</a></li>
+                    <li><a href="#" class="nav-link px-3 link-secondary">Cari Kamar</a></li>
+                    <li><a href="#" class="nav-link px-3 link-secondary">Daftar Sebagai Host</a></li>
+                    <li><a href="#" class="nav-link px-3 link-secondary">PANDU</a></li>
+                </ul>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small mt-sm-3 mt-lg-4">
+                        <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                        <li><a class="dropdown-item" href="/views/profile/index.html">Profil</a></li>
+                        <li><a class="dropdown-item" href="#">Pemesanan</a></li>
+                        <li><a class="dropdown-item" href="#">Pemesanan Pemandu</a></li>
+                        <li><a class="dropdown-item" href="#">Mitra Bisnis</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Daftar jadi Host</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/login/login.html">Bantuan (WA)</a></li>
+                        <li><a class="dropdown-item" href="/login/login.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row row-main-heading m-3 mx-md-5">
+                <div class="header-dompet p-0 col-md-6 offset-md-3 mt-sm-2">
+                    <div class="heading-dompet m-0">
+                        <a href="/views/profile/index.html">
+                            <h3><i class="bi bi-arrow-left-circle"></i>Dompet</h3>
+                        </a>
+                        <span>Saldo kamu yang tersimpan di dompet kamar pelajar</span>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- main dompet -->
+            <div class="row row-main-dompet m-3 mx-md-5">
+                <div class="card shadow-sm p-0 col-md-6 offset-md-3 mt-sm-2">
+                    <div class="card-body-dompet">
+                        <!-- card saldo -->
+                        <div class="card-dompet">
+                            <div class="card-saldo p-3">
+                                <span>Saldo Kamu</span>
+                                <h3>RP.1.200.000</h3>
+                            </div>
+                        </div>
+                        <!-- end of card saldo section -->
+                        <!-- heading riwayat transaksi -->
+                        <div class="heading-riwayat p-3">
+                            <h5>
+                                <i class="bi bi-receipt"></i> Riwayat Transaksi
+                            </h5>
+                        </div>
+                        <!-- end of heading riwayat transaksi -->
+                        <!-- riwayat transaksi -->
+                        <div class="row transaksi px-3 mb-4">
+                            <!-- riwayat trans 1 -->
+                            <!-- icon -->
+                            <div class="icon-transaksi col-2 m">
+                                <h2 class="text-center m-0
+                                "><i class="bi bi-box-arrow-in-down text-success"></i></h2>
+                            </div>
+                            <!-- end of icon -->
+                            <!-- status -->
+                            <div class="status-transaksi col-6 col-md-7 p-0">
+                                <h6>Retur DP Pemesanan ID:42</h6>
+                                <span>24 Desember 2022</span>
+                            </div>
+                            <!-- end of status -->
+                            <!-- nominal -->
+                            <div class="nominal-transaksi col-4 col-md-3 text-end">
+                                <h6 class="text-success">+300.000</h6>
+                            </div>
+                            <!-- end of nominal -->
+                            <hr class="my-3">
+                            <!-- end of riwayat trans 1 section -->
+
+                            <!-- riwayat trans 2 -->
+                            <!-- icon -->
+                            <div class="icon-transaksi col-2">
+                                <h2 class="text-center m-0
+                                "><i class="bi bi-box-arrow-in-down text-success"></i></h2>
+                            </div>
+                            <!-- end of icon -->
+                            <!-- status -->
+                            <div class="status-transaksi col-6 col-md-7 p-0">
+                                <h6>Retur DP Pemesanan ID:19</h6>
+                                <span>20 Desember 2022</span>
+                            </div>
+                            <!-- end of status -->
+                            <!-- nominal -->
+                            <div class="nominal-transaksi col-4 col-md-3 text-end">
+                                <h6 class="text-success">+240.000</h6>
+                            </div>
+                            <!-- end of nominal -->
+                            <hr class="my-3">
+                            <!-- end of riwayat trans 2 section -->
+
+                            <!-- riwayat trans 3 -->
+                            <!-- icon -->
+                            <div class="icon-transaksi col-2">
+                                <h2 class="text-center m-0
+                                "><i class="bi bi-box-arrow-up text-danger"></i></h2>
+                            </div>
+                            <!-- end of icon -->
+                            <!-- status -->
+                            <div class="status-transaksi col-6 col-md-7 p-0">
+                                <h6>Pembayaran DP Pemesanan ID:112</h6>
+                                <span>15 Desember 2022</span>
+                            </div>
+                            <!-- end of status -->
+                            <!-- nominal -->
+                            <div class="nominal-transaksi col-4 col-md-3 text-end">
+                                <h6 class="text-danger">-180.000</h6>
+                            </div>
+                            <!-- end of nominal -->
+                            <hr class="my-3">
+                            <!-- end of riwayat trans 3 section -->
+
+                            <!-- riwayat trans 4 -->
+                            <!-- icon -->
+                            <div class="icon-transaksi col-2">
+                                <h2 class="text-center m-0
+                                "><i class="bi bi-box-arrow-in-down text-success"></i></h2>
+                            </div>
+                            <!-- end of icon -->
+                            <!-- status -->
+                            <div class="status-transaksi col-6 col-md-7 p-0">
+                                <h6>Retur DP Pemesanan ID:21</h6>
+                                <span>12 Desember 2022</span>
+                            </div>
+                            <!-- end of status -->
+                            <!-- nominal -->
+                            <div class="nominal-transaksi col-4 col-md-3 text-end">
+                                <h6 class="text-success">+540.000</h6>
+                            </div>
+                            <!-- end of nominal -->
+                            <hr class="my-3">
+                            <!-- end of riwayat trans 4 section -->
+
+                            <!-- riwayat trans 5 -->
+                            <!-- icon -->
+                            <div class="icon-transaksi col-2">
+                                <h2 class="text-center m-0
+                                "><i class="bi bi-box-arrow-up text-danger"></i></h2>
+                            </div>
+                            <!-- end of icon -->
+                            <!-- status -->
+                            <div class="status-transaksi col-6 col-md-7 p-0">
+                                <h6>Pembayaran DP Pemesanan ID:213</h6>
+                                <span>04 Desember 2022</span>
+                            </div>
+                            <!-- end of status -->
+                            <!-- nominal -->
+                            <div class="nominal-transaksi col-4 col-md-3 text-end">
+                                <h6 class="text-danger">-450.000</h6>
+                            </div>
+                            <!-- end of nominal -->
+                            <!-- <hr class="my-3"> -->
+                            <!-- end of riwayat trans 5 section -->
+                        </div>
+                        <!-- end of riwayat transaksi section -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of main dompet section -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container mt-5">
+            <div class="card px-md-5 px-2">
+                <div class="card-body mx-md-5 px-md-5 mx-5">
+                    <div class="row mx-md-5 px-md-5">
+                        <div class="footer-item col-6 pt-3">
+                            <h5>Tentang Kami</h5>
+                            <ul class="list-item mt-3">
+                                <li>
+                                    <a href="">Visi Misi</a>
+                                </li>
+                                <li>
+                                    <a href="">Karir</a>
+                                </li>
+                                <li>
+                                    <a href="">Partner</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-item col-6 pt-3">
+                            <h5>Informasi</h5>
+                            <ul class="list-item mt-3">
+                                <li>
+                                    <a href="">Covid-19</a>
+                                </li>
+                                <li>
+                                    <a href="">Syarat dan Ketentuan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- bootstrap -->
+<script src="/assets/dist/js/bootstrap.bundle.min.js "></script>
+
+</html>
